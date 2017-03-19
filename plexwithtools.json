@@ -1,5 +1,5 @@
 {
-    "Plex with Tools Support": {
+    "Plex with WebTools": {
         "containers": {
             "plex-linuxserver.io-tools": {
                 "image": "anatox/plex",
@@ -55,13 +55,13 @@
                 }
             }
         },
-        "description": "Plex media server by Linuxserver.io",
+        "description": "Plex media server by Linuxserver.io with added webtools",
         "more_info": "<h4>Adding more media to Plex.</h4><p>You can add more Shares(with media) to Plex from the settings wizard of this Rock-on. Then, from Plex WebUI, you can update and re-index your library.</p>",
         "ui": {
             "slug": "web"
         },
         "volume_add_support": true,
-        "website": "https://hub.docker.com/r/linuxserver/plex/",
+        "website": "https://hub.docker.com/r/anatox/plex/",
         "version": "1.0"
     }
 }
