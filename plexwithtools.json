@@ -1,0 +1,67 @@
+{
+    "Plex with Tools Support": {
+        "containers": {
+            "plex-linuxserver.io-tools": {
+                "image": "anatox/plex",
+                "opts": [
+                    [
+                        "--net=host",
+                        ""
+                    ]
+                ],
+                "launch_order": 1,
+                "ports": {
+                    "32400": {
+                        "description": "WebUI port. Suggested default: 32400",
+                        "host_default": 32400,
+                        "label": "WebUI port",
+                        "procotol": "tcp",
+                        "ui": true
+                    },
+                    "33400": {
+                        "description": "WebTools port. Suggested default: 33400",
+                        "host_default": 33400,
+                        "label": "WebTools port",
+                        "procotol": "tcp",
+                        "ui": true
+                    }
+                },
+                "volumes": {
+                    "/config": {
+                        "description": "Choose a Share for Plex configuration. Eg: create a Share called plex-config for this purpose alone.",
+                        "label": "Config Storage"
+                    },
+                    "/data": {
+                        "description": "Choose a Share for Plex content(your media). Eg: create a Share called plex-data for this purpose alone. You can also assign other media Shares on the system after installation.",
+                        "label": "Data Storage"
+                    }
+                },
+                "environment": {
+                    "VERSION": {
+                        "description": "Choose version of plex. unless you know which version to try, just type latest",
+                        "label": "VERSION",
+                        "index": 1
+                    },
+                    "PUID": {
+                        "description": "Enter a valid UID to run Plex with. It must have full permissions to all Shares mapped in the previous step.",
+                        "label": "UID",
+                        "index": 2
+                    },
+                    "PGID": {
+                        "description": "Enter a valid GID to use along with the above UID. It(or the above UID) must have full permissions to all Shares mapped in the previous step.",
+                        "label": "GID",
+                        "index": 3
+                    }
+                }
+            }
+        },
+        "description": "Plex media server by Linuxserver.io",
+        "more_info": "<h4>Adding more media to Plex.</h4><p>You can add more Shares(with media) to Plex from the settings wizard of this Rock-on. Then, from Plex WebUI, you can update and re-index your library.</p>",
+        "ui": {
+            "slug": "web"
+        },
+        "volume_add_support": true,
+        "website": "https://hub.docker.com/r/linuxserver/plex/",
+        "version": "1.0"
+    }
+}
