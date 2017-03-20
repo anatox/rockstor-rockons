@@ -22,8 +22,13 @@
                         "description": "WebTools port. Suggested default: 33400",
                         "host_default": 33400,
                         "label": "WebTools port",
-                        "procotol": "tcp",
-                        "ui": true
+                        "procotol": "tcp"
+                    },
+                    "33443": {
+                        "description": "WebTools SSL port. Suggested default: 33443",
+                        "host_default": 33443,
+                        "label": "WebTools port",
+                        "procotol": "tcp"
                     }
                 },
                 "volumes": {
