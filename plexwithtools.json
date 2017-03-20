@@ -14,21 +14,18 @@
                     "32400": {
                         "description": "WebUI port. Suggested default: 32400",
                         "host_default": 32400,
-                        "label": "WebUI port",
-                        "procotol": "tcp",
+                        "label": "WebUI port"
                         "ui": true
                     },
                     "33400": {
                         "description": "WebTools port. Suggested default: 33400",
                         "host_default": 33400,
-                        "label": "WebTools port",
-                        "procotol": "tcp"
+                        "label": "WebTools port"
                     },
                     "33443": {
                         "description": "WebTools SSL port. Suggested default: 33443",
                         "host_default": 33443,
-                        "label": "WebTools port",
-                        "procotol": "tcp"
+                        "label": "WebTools SSL port"
                     }
                 },
                 "volumes": {
