@@ -14,7 +14,7 @@
                     "32400": {
                         "description": "WebUI port. Suggested default: 32400",
                         "host_default": 32400,
-                        "label": "WebUI port"
+                        "label": "WebUI port",
                         "ui": true
                     },
                     "33400": {
